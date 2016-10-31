@@ -37,6 +37,14 @@
 	border-bottom-color: red;
 	position: relative;
 	top: -200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+p{
+  margin-top: 400px;
+  z-index: 2;
 }
 .diamond:after {
 	content: "";
