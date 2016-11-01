@@ -15,10 +15,6 @@
 
 <head>
 
-  <script src="https://use.fontawesome.com/041a8a6fad.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="randomquote.js"></script>
-
 <body>
   <div class="header">
     <h1>Random Quote Machine</h1>
@@ -26,19 +22,27 @@
 
   <div class="main">
     <div class="d-container">
-      <div class="diamond" id="d1"><p>Hello hello helLLo
-      </p></div>
+      <div class="diamond" id="d1"></div>
       <div class="diamond" id="d2"></div>
       <div class="diamond" id="d3"></div>
-      <div class="diamond" id="d4"></div>
+      <div class="diamond" id="d4"><p id="quote-text"></p></div>
+    </div>
+    <div class="author">
+      <p></p>
     </div>
     <div class="button-container">
       <div class="tweet">
         <i class="fa fa-twitter-square" aria-hidden="true"></i>
       </div>
       <div class="quote-button">
-        <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+        <i class="fa fa-chevron-circle-right" id="randQuote" aria-hidden="true"></i>
       </div>
     </div>
   </div>
 </body>
+
+
+<script src="https://use.fontawesome.com/041a8a6fad.js"></script>
+<script src="jQuery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="randomquote.js"></script>

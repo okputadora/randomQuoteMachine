@@ -73,8 +73,30 @@ p{
 #d4{
   border-bottom-color: #FFF1CC;
   left: -600px;
+  display: flex;
+  justify-content: center;
 }
 #d4:after{border-top-color: #FFF1CC;}
+
+#quote-text{
+  margin-top: 450px;
+  min-width: 200px;
+  text-align: center;
+
+}
+
+.author{
+  align-self: flex-end;
+  margin-right: 490px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 300px;
+  background-color: #F9CC96;
+}
 
 .tweet{
   font-size: 100px;
@@ -86,4 +108,8 @@ p{
   font-size: 100px;
   margin-left: 100px;
   color: #FD8653;
+}
+
+#randQuote{
+  border: 2px solid red;
 }
