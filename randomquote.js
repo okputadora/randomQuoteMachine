@@ -20,7 +20,7 @@ $(document).ready(function(){
             + keyStr + "&format=jsonp&lang=en&jsonp=?";
   $.getJSON(url, getQuote, 'jsonp');
 
-  $("#randQuote").click(function(){
+  $(".quote-button").click(function(){
     var key = Math.round(Math.random() * 999999 - 000001)
     var keyStr = key.toString();
     //The way the api code works 2 is different than 02 or 002 so if we wanted

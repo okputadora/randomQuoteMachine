@@ -3,6 +3,7 @@
   font-family: 'Scope One', serif;
 }
 
+body, html{width: 100% !important;}
 .header{
   display: flex;
   justify-content: center;
@@ -25,7 +26,7 @@
 
 .button-container{
   /*border: 1px solid red;*/
-  margin-top: 120px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,9 +108,10 @@ p{
 .quote-button{
   font-size: 100px;
   margin-left: 100px;
-  color: #FD8653;
+  color: #6F76BC;
+  border: 1px solid red;
 }
 
 #randQuote{
-  border: 2px solid red;
+  border: 1px solid red;
 }
