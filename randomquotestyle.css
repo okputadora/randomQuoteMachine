@@ -25,8 +25,7 @@ body, html{width: 100% !important;}
 }
 
 .button-container{
-  /*border: 1px solid red;*/
-  margin-top: 20px;
+  margin-top: 125px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,7 +52,6 @@ p{
 	left: -200px;
 	top: 200px;
 	width: 0px;
-	height: 0;
 	border: 200px solid transparent;
 	border-top-color: red;
 }
@@ -101,7 +99,6 @@ p{
 
 .tweet{
   font-size: 100px;
-  color: dodgerblue;
   opacity: .7;
 }
 
@@ -109,9 +106,16 @@ p{
   font-size: 100px;
   margin-left: 100px;
   color: #6F76BC;
-  border: 1px solid red;
+}
+
+.tweet > a, .tweet > a:visited{
+  color: dodgerblue;
+}
+
+.quote-button:hover{
+  cursor: pointer;
 }
 
 #randQuote{
-  border: 1px solid red;
+  z-index: 50;
 }

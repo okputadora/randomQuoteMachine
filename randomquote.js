@@ -10,6 +10,13 @@ $(document).ready(function(){
     else{
       $(".author").text(data.quoteAuthor);
     }
+
+    //for twitter
+    var tweetURL = 'https://twitter.com/intent/tweet?text='
+                  + data.quoteText + ' -- ' + data.quoteAuthor;
+
+    //Change the twitter href
+    $("#twitter-share").attr("href", tweetURL);
   };
 
   //Start page with random quote
@@ -20,7 +27,7 @@ $(document).ready(function(){
             + keyStr + "&format=jsonp&lang=en&jsonp=?";
   $.getJSON(url, getQuote, 'jsonp');
 
-  $(".quote-button").click(function(){
+  $("#randQuote").click(function(){
     var key = Math.round(Math.random() * 999999 - 000001)
     var keyStr = key.toString();
     //The way the api code works 2 is different than 02 or 002 so if we wanted
