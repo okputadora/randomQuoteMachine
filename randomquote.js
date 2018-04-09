@@ -22,7 +22,7 @@ $(document).ready(function(){
   var key = Math.round(Math.random() * 999999 - 000001)
   var keyStr = key.toString();
   // add the key to the URL
-  var url = "http://api.forismatic.com/api/1.0/?method=getQuote&key="
+  var url = "https://api.forismatic.com/api/1.0/?method=getQuote&key="
             + keyStr + "&format=jsonp&lang=en&jsonp=?";
   $.getJSON(url, getQuote, 'jsonp');
 
