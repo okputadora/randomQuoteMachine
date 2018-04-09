@@ -35,7 +35,7 @@ $(document).ready(function(){
     //If the key is less than 6 digits add zeros to the beginning
 
     // add the key to the URL
-    var url = "http://api.forismatic.com/api/1.0/?method=getQuote&key="
+    var url = "https://api.forismatic.com/api/1.0/?method=getQuote&key="
               + keyStr + "&format=jsonp&lang=en&jsonp=?";
     $.getJSON(url, getQuote, 'jsonp');
   });
