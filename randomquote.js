@@ -18,9 +18,6 @@ $(document).ready(function(){
     //Change the twitter href
     $("#twitter-share").attr("href", tweetURL);
   };
-
-  console.log("Hello");
-
   //Start page with random quote
   var key = Math.round(Math.random() * 999999 - 000001)
   var keyStr = key.toString();
